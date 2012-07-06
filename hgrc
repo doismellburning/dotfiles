@@ -1,0 +1,21 @@
+[ui]
+username = Kristian Glass <hg@doismellburning.co.uk>
+verbose = True
+
+[pager]
+pager = less
+quiet = True
+attend = diff,status,log,qdiff,blame,annotate,pdiff,glog
+
+[extensions]
+hgext.graphlog =
+hgext.convert = 
+hgext.fetch =
+#shelve = ~/hg/hgshelve/hgshelve.py
+color =
+pager =
+rebase =
+collapse = ~/hg/hgcollapse/hgext/collapse.py
+
+[bookmarks]
+track.current = True

@@ -1,0 +1,14 @@
+[user]
+	name = Kristian Glass
+	email = git@doismellburning.co.uk
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[alias]
+	co = checkout
+	graph = log --graph --decorate --all
+	addp = add --patch
+	logdiff = log --patch
+[core]
+	excludesfile = ~/.gitignore_global
