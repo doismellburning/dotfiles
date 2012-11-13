@@ -13,3 +13,5 @@
 	branches = branch -v
 [core]
 	excludesfile = ~/.gitignore_global
+[push]
+	default = matching
