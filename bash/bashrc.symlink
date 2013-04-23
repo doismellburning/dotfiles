@@ -16,6 +16,7 @@ export VISUAL=vim
 export TMPDIR=/tmp
 export BROWSER=/usr/bin/links
 export LESS="FRX" # Kill less if <1 screen, handle escape codes, don't clear screen first
+export AUTOSSH_PORT=0
 
 
 case $TERM in
