@@ -1,0 +1,2 @@
+OPTIONS=showexp,showscore,time,color,noautopickup,disclose:+i +a yv yg yc,pickup_burden:S
+OPTIONS=autodig,fruit:slime mold,boulder:0

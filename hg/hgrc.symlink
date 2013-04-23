@@ -8,14 +8,18 @@ quiet = True
 attend = diff,status,log,qdiff,blame,annotate,pdiff,glog
 
 [extensions]
+hgext.bookmarks =
 hgext.graphlog =
 hgext.convert = 
 hgext.fetch =
-#shelve = ~/hg/hgshelve/hgshelve.py
 color =
 pager =
 rebase =
-collapse = ~/hg/hgcollapse/hgext/collapse.py
+record =
+transplant =
+mq =
+histedit =
+hggit =
 
 [bookmarks]
 track.current = True
