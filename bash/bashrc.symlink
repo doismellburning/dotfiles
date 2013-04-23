@@ -57,6 +57,13 @@ then
 	fortune
 fi
 
+DOTFILES_DIR=$HOME/.dotfiles
+for file in $(find $DOTFILES_DIR -name \*.bash)
+do
+	. $file
+done
+
+
 BASHRCLOCAL=$HOME/.bashrc.local
 
 if [[ -f $BASHRCLOCAL ]]
