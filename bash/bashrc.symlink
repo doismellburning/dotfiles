@@ -1,6 +1,13 @@
 alias ls="LC_COLLATE=C ls --color=auto -F"
 alias ll='ls -l'
 alias la='ls -a'
+
+if [[ "$OSTYPE" == "darwin"* ]]
+then
+	alias ls="ls -GF"
+	export LSCOLORS=Gxfxcxdxbxegedabagacad
+fi
+
 alias grep='grep --color'
 alias hilite='grep -C 999999'
 alias urxvt='urxvt -fg white -bg black +sb -fn "xft:Bitstream Vera Sans Mono:autohint=true:size=10pt"'
