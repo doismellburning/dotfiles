@@ -72,6 +72,7 @@ do
 	. $file
 done
 
+export PATH="$PATH:$DOTFILES_DIR/bin"
 
 BASHRCLOCAL=$HOME/.bashrc.local
 
