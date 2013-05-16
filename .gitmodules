@@ -1,0 +1,3 @@
+[submodule "vim/vim.symlink/bundle/octopress"]
+	path = vim/vim.symlink/bundle/octopress
+	url = git://github.com/tangledhelix/vim-octopress.git
