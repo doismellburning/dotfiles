@@ -23,3 +23,6 @@ autocmd BufRead,BufNewFile *.gv set filetype=dot
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 
 set background=dark
+
+"Pathogen
+execute pathogen#infect()
