@@ -21,6 +21,7 @@ autocmd BufRead,BufNewFile /usr/local/nginx/conf/* set ft=nginx
 autocmd BufRead,BufNewFile nginx.conf set ft=nginx
 autocmd BufRead,BufNewFile *.gv set filetype=dot
 autocmd BufRead,BufNewFile *.md set filetype=markdown
+autocmd BufRead,BufNewFile */source/_posts/* set filetype=octopress
 
 set background=dark
 
