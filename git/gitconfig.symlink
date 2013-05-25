@@ -5,6 +5,7 @@
 	diff = auto
 	status = auto
 	branch = auto
+	ui = auto
 [alias]
 	co = checkout
 	graph = log --graph --decorate --all
