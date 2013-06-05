@@ -1,3 +1,6 @@
 [submodule "vim/vim.symlink/bundle/octopress"]
 	path = vim/vim.symlink/bundle/octopress
 	url = git://github.com/tangledhelix/vim-octopress.git
+[submodule "vim/vim.symlink/bundle/puppet"]
+	path = vim/vim.symlink/bundle/puppet
+	url = git://github.com/netdata/vim-puppet.git
