@@ -4,3 +4,6 @@
 [submodule "vim/vim.symlink/bundle/puppet"]
 	path = vim/vim.symlink/bundle/puppet
 	url = git://github.com/netdata/vim-puppet.git
+[submodule "vim/vim.symlink/bundle/scala"]
+	path = vim/vim.symlink/bundle/scala
+	url = https://github.com/derekwyatt/vim-scala.git
