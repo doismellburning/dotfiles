@@ -7,7 +7,7 @@ chomp $remote;
 if ($remote =~ /^http/) {
 	system("open $remote");
 } elsif ( $remote =~ /^git/ ) {
-	$remote =~ s!git\@github.com:(.*).git!https://github.com/\1!;
+	$remote =~ s!git\@github.com:(.*)(.git)?!https://github.com/\1!;
 	system("open $remote");
 } else {
 	print "No idea how to handle $remote\n";
