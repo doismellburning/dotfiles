@@ -61,11 +61,6 @@ function svnlog() {
 
 umask 0002
 
-if [[ -x $(which fortune 2> /dev/null) ]]
-then
-	fortune
-fi
-
 DOTFILES_DIR=$HOME/.dotfiles
 for file in $(find $DOTFILES_DIR -name \*.bash)
 do
