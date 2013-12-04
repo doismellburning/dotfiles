@@ -15,7 +15,7 @@ alias dush='du -sxh * | tee dush'
 alias bashrc=". $HOME/.bashrc"
 alias env='env | sort'
 
-export PATH="$PATH:$HOME/bin/"
+export PATH="$PATH:$HOME/bin"
 export CVS_RSH='ssh'
 
 export EDITOR=vim
