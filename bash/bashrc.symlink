@@ -59,6 +59,12 @@ function svnlog() {
 	svn log -l 50 $*
 }
 
+function security_updates() {
+	# http://askubuntu.com/a/217999
+	apt-get -s dist-upgrade | grep "^Inst" | grep -i securi
+}
+
+
 umask 0002
 
 DOTFILES_DIR=$HOME/.dotfiles
