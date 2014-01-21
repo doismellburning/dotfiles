@@ -7,3 +7,6 @@
 [submodule "vim/vim.symlink/bundle/scala"]
 	path = vim/vim.symlink/bundle/scala
 	url = https://github.com/derekwyatt/vim-scala.git
+[submodule "vim/vim.symlink/bundle/vim2hs"]
+	path = vim/vim.symlink/bundle/vim2hs
+	url = https://github.com/dag/vim2hs
