@@ -16,3 +16,5 @@
 	excludesfile = ~/.gitignore_global
 [push]
 	default = current
+[diff]
+	wordregex = [[:alnum:]]+|[^[:space:]]
