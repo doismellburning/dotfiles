@@ -81,3 +81,9 @@ if [[ -f $BASHRCLOCAL ]]
 then
 	. $BASHRCLOCAL
 fi
+
+GIT_COMPLETION="/opt/local/share/git-core/contrib/completion/git-completion.bash"
+if [[ -f $GIT_COMPLETION ]]
+then
+	. $GIT_COMPLETION
+fi
