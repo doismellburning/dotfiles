@@ -5,3 +5,4 @@
 .vagrant
 .*.swp
 .cabal-sandbox
+cabal.sandbox.config
