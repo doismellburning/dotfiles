@@ -4,3 +4,4 @@
 .rbenv-version
 .vagrant
 .*.swp
+.cabal-sandbox
