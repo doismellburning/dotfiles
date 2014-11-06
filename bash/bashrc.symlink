@@ -8,7 +8,7 @@ then
 	export LSCOLORS=Gxfxcxdxbxegedabagacad
 fi
 
-alias grep='grep --color'
+alias grep='grep --color --binary-files=without-match'
 alias hilite='grep -C 999999'
 alias urxvt='urxvt -fg white -bg black +sb -fn "xft:Bitstream Vera Sans Mono:autohint=true:size=10pt"'
 alias dush='du -sxh * | tee dush'
