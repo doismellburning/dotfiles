@@ -67,6 +67,17 @@ function security_updates() {
 	apt-get -s dist-upgrade | grep "^Inst" | grep -i securi
 }
 
+function gitbc() {
+	# Clean up local git branches that have been merged back
+	# (Very hacky)
+
+	BASEBRANCH="develop" # TODO Make this parameterisable
+	for branch in $(git branch --merged $BASEBRANCH | grep -v "${BASEBRANCH}$")
+	do
+		git branch -d $branch
+	done
+}
+
 
 umask 0002
 
