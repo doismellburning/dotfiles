@@ -34,8 +34,9 @@ esac
 
 
 GIT_BRANCH="\$(git branch 2>/dev/null | grep "^*" | colrm 1 1 )" # colrm should leave in leading space, which we sneak into usage...
+NOW="\$(date -u +%FT%T%z)"
 
-export BASEPROMPT="\[\e[0;32m\][\u@\h \w]\[\e[0m\]${GIT_BRANCH} \[\e[0;32m\]\$\[\e[0m\] "
+export BASEPROMPT="\[\e[0;32m\][${NOW} \u@\h \w]\[\e[0m\]${GIT_BRANCH} \[\e[0;32m\]\$\[\e[0m\] "
 export PS1="${WINDOWTITLE}${BASEPROMPT}"
 
 function camldap() {
