@@ -10,3 +10,6 @@
 [submodule "vim/vim.symlink/bundle/vim2hs"]
 	path = vim/vim.symlink/bundle/vim2hs
 	url = https://github.com/dag/vim2hs
+[submodule "vim/vim.symlink/bundle/Dockerfile"]
+	path = vim/vim.symlink/bundle/Dockerfile
+	url = https://github.com/ekalinin/Dockerfile.vim.git
