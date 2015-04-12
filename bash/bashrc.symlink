@@ -88,6 +88,7 @@ umask 0002
 DOTFILES_DIR=$HOME/.dotfiles
 for file in $(find $DOTFILES_DIR -name \*.bash)
 do
+	echo "Loading $file..."
 	. $file
 done
 
