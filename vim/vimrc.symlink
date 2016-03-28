@@ -9,6 +9,8 @@ set ruler
 syntax on
 filetype plugin on
 
+set viminfo='20,<1000,s1000 " Bigger paste buffer - https://stackoverflow.com/questions/17812111/default-buffer-size-to-copy-paste-in-vim
+
 "Proper tabbing
 set tabstop=4
 set shiftwidth=4
