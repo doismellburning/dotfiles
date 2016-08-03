@@ -6,3 +6,9 @@ bind r source-file ~/.tmux.conf \; display-message "Config reloaded..."
 set -g default-terminal "screen-256color"
 
 set -g status-right '#[fg=white,bg=red,bright]#(hostname -s) #[fg=white,bg=cyan,bright]#(uptime | sed -e "s/.*average.*: //" -e "s/,//g") #[fg=white,bg=blue,bright]%Y-%m-%d %H:%M:%S' # GNU uptime says "averages: x, y, z"; BSD says "average: X Y Z"; the seds are different too...
+
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+
+# https://github.com/tmux-plugins/tpm
+run '~/.tmux/plugins/tpm/tpm'

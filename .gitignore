@@ -1,3 +1,6 @@
 /pip/pip.symlink/download-cache
 /pip/pip.symlink/pip.log
+/tmux/tmux.symlink/plugins/*
+!/tmux/tmux.symlink/plugins/tpm
+/tmux/tmux.symlink/resurrect/
 /vim/vim.symlink/.netrwhist
