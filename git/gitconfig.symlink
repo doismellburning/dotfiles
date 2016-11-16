@@ -14,6 +14,8 @@
 	branches = branch -v
 	oddgraph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	diffm = diff --diff-filter=M
+	please = push --force-with-lease
+	commend = commit --amend --no-edit
 [core]
 	excludesfile = ~/.gitignore_global
 [push]
