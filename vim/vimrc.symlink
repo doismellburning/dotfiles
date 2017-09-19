@@ -30,6 +30,10 @@ autocmd BufRead,BufNewFile Vagrantfile set filetype=ruby " They're created with 
 autocmd BufRead,BufNewFile Puppetfile set filetype=ruby
 autocmd BufRead,BufNewFile *.wsgi set filetype=python
 
+"I don't understand why the default vim yaml stuff has 4-space tabs, but 2 is
+"more conventional! https://stackoverflow.com/a/37488992/928098
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 set background=dark
 
 "Pathogen - https://github.com/tpope/vim-pathogen
