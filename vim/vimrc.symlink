@@ -46,24 +46,43 @@ command! GoProph
 	\ %s/->/./ge |
 	\ %s/NULL/nil/ge |
 	\ %s/ gsn_/ C.gsn_/ge |
+	\ %s/ AC_/ C.AC_/ge |
 	\ %s/ ACT_/ C.ACT_/ge |
 	\ %s/ AFF_/ C.AFF_/ge |
+	\ %s/ AFF2_/ C.AFF2_/ge |
+	\ %s/ APPLY_/ C.APPLY_/ge |
+	\ %s/ ASSIST_/ C.ASSIST_/ge |
+	\ %s/ AQUEST_/ C.AQUEST_/ge |
+	\ %s/ COMM_/ C.COMM_/ge |
 	\ %s/ COND_/ C.COND_/ge |
+	\ %s/ CONT_/ C.CONT_/ge |
 	\ %s/ DAM_/ C.DAM_/ge |
 	\ %s/ EM_/ C.EM_/ge |
 	\ %s/ EX_/ C.EX_/ge |
+	\ %s/ GOD_/ C.GOD_/ge |
+	\ %s/ IMM_/ C.IMM_/ge |
 	\ %s/ ITEM_/ C.ITEM_/ge |
 	\ %s/ LEVEL_/ C.LEVEL_/ge |
+	\ %s/ MAX_/ C.MAX_/ge |
+	\ %s/ MEM_/ C.MEM_/ge |
+	\ %s/ NOTE_/ C.NOTE_/ge |
+	\ %s/ OBJ_/ C.OBJ_/ge |
 	\ %s/ OFF_/ C.OFF_/ge |
+	\ %s/ PENALTY_/ C.PENALTY_/ge |
 	\ %s/ PLR_/ C.PLR_/ge |
 	\ %s/ POS_/ C.POS_/ge |
 	\ %s/ PULSE_/ C.PULSE_/ge |
 	\ %s/ ROOM_/ C.ROOM_/ge |
 	\ %s/ SECT_/ C.SECT_/ge |
 	\ %s/ STAT_/ C.STAT_/ge |
+	\ %s/ TARGET_/ C.TARGET_/ge |
+	\ %s/ TIMED_/ C.TIMED_/ge |
 	\ %s/ TO_/ C.TO_/ge |
 	\ %s/ TRIG_/ C.TRIG_/ge |
-	\ %s/ WIZ_/ C.WIZ_/ge |
+	\ %s/ TYPE_/ C.TYPE_/ge |
+	\ %s/ WEAPON_/ C.WEAPON_/ge |
+	\ %s/ WEAR_/ C.WEAR_/ge |
+	\ %s/ C.WIZ_/ WIZ_/ge |
 	\ %s/REMOVE_BIT(/C.remove_bit(\&/ge |
 	\ %s/SET_BIT(/C.set_bit(\&/ge |
 	\ %s/void *\(do_.*\)(.*/func \1 (ch *C.CHAR_DATA, argument *C.char) {/ge |
