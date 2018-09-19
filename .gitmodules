@@ -28,3 +28,6 @@
 [submodule "vim/vim.symlink/bundle/vim-raml"]
 	path = vim/vim.symlink/bundle/vim-raml
 	url = https://github.com/IN3D/vim-raml.git
+[submodule "pyenv/pyenv.symlink"]
+	path = pyenv/pyenv.symlink
+	url = https://github.com/pyenv/pyenv.git
