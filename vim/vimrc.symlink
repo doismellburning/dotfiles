@@ -34,6 +34,11 @@ autocmd BufRead,BufNewFile *.wsgi set filetype=python
 "more conventional! https://stackoverflow.com/a/37488992/928098
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
+" Swap the word the cursor is on with the next word (which can be on a
+" newline, and punctuation is "skipped"):
+" https://superuser.com/a/290384/120166
+nmap <silent> gw "_yiw:s/\(\%#\w\+\)\(\_W\+\)\(\w\+\)/\3\2\1/<CR><C-o>:noh<CR>
+
 set background=dark
 
 "Pathogen - https://github.com/tpope/vim-pathogen
