@@ -24,3 +24,5 @@
 	wordregex = [[:alnum:]]+|[^[:space:]]
 [commit]
 	verbose = true
+[url "git+ssh://doismellburning@git.launchpad.net/"]
+	insteadof = lp:
