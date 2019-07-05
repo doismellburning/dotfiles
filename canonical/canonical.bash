@@ -8,3 +8,5 @@ esac
 
 export GIT_AUTHOR_EMAIL="kristian.glass@canonical.com"
 export GIT_COMMITTER_EMAIL="kristian.glass@canonical.com"
+
+export BZR_EMAIL="Kristian Glass <kristian.glass@canonical.com>" # bzr doesn't split name/email like git does
