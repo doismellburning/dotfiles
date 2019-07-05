@@ -7,3 +7,4 @@ case "$HOSTNAME" in
 esac
 
 export GIT_AUTHOR_EMAIL="kristian.glass@canonical.com"
+export GIT_COMMITTER_EMAIL="kristian.glass@canonical.com"
