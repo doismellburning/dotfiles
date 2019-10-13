@@ -88,7 +88,9 @@ function gitbc() {
 
 function va() {
 	# Thanks George!
-	vi $(grep -rl "$1" $2)
+	pattern=$1
+	shift
+	vi $(grep -rl "$pattern" $@)
 }
 
 
