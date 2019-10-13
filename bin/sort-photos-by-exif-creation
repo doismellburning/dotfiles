@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -eu
+
+FILES=("$@")
+
+for IMAGE in "${FILES[@]}"
+do
+	echo "Processing $IMAGE"
+
+	# shellcheck disable=SC2016
+	CREATED=$(exiftool -ignoreMinorErrors -printFormat '$CreateDate' -dateFormat "%Y-%m-%d" "$IMAGE")
+
+	if [ -z "$CREATED" ]
+	then
+		echo "Could not find CreateDate, skipping"
+		continue
+	fi
+	echo "$IMAGE created $CREATED"
+	mkdir -p "$CREATED"
+	mv -nv "$IMAGE" "./$CREATED/"
+done
