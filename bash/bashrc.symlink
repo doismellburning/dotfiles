@@ -15,10 +15,6 @@ alias grep='grep --color --binary-files=without-match'
 alias hilite='grep -C 999999'
 alias urxvt='urxvt -fg white -bg black +sb -fn "xft:Bitstream Vera Sans Mono:autohint=true:size=10pt"'
 alias curlhead='curl -s -D - -o /dev/null'
-function dush() {
-	date | tee dush
-	du -sxh * | tee -a .dush
-}
 alias bashrc=". $HOME/.bashrc"
 alias env='env | sort'
 
@@ -45,6 +41,11 @@ NOW="\$(date -u +%FT%T%z)"
 
 export BASEPROMPT="\[\e[0;32m\][${NOW} \u@\h \w]\[\e[0m\]${GIT_BRANCH} \[\e[0;32m\]\$\[\e[0m\] "
 export PS1="${WINDOWTITLE}${BASEPROMPT}"
+
+function dush() {
+	date | tee dush
+	du -sxh * | tee -a .dush
+}
 
 function camldap() {
 	ldapsearch -x -LLL -h'ldap.lookup.cam.ac.uk' -b'o=University of Cambridge, dc=cam, dc=ac, dc=uk' uid=$1
