@@ -84,10 +84,10 @@ if ! shopt -oq posix; then
 fi
 
 DOTFILES_DIR=$HOME/.dotfiles
-for file in $DOTFILES_DIR/*/*.bash
+for file in "$DOTFILES_DIR"/*/*.bash
 do
 	echo "Loading $file..."
-	. $file
+	. "$file"
 done
 
 export PATH="$PATH:$DOTFILES_DIR/bin"
