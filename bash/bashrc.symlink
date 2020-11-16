@@ -3,6 +3,8 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
+. "$HOME"/.shrc
+
 alias ls="LC_COLLATE=C ls --color=auto -F"
 alias ll='ls -l'
 alias la='ls -a'
