@@ -1,0 +1,3 @@
+#!/bin/sh
+
+# Note this isn't loaded by sh by default - this is common shell-isms for use from bash and zsh
