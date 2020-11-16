@@ -84,6 +84,11 @@ if ! shopt -oq posix; then
 fi
 
 DOTFILES_DIR=$HOME/.dotfiles
+for file in "$DOTFILES_DIR"/*/*.sh
+do
+	echo "Loading $file..."
+	. "$file"
+done
 for file in "$DOTFILES_DIR"/*/*.bash
 do
 	echo "Loading $file..."
