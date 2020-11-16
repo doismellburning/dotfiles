@@ -6,7 +6,7 @@ alias ls="LC_COLLATE=C ls --color=auto -F"
 alias ll='ls -l'
 alias la='ls -a'
 
-if [[ "$OSTYPE" == "darwin"* ]]
+if [ "$(uname -s)" = "Darwin" ]
 then
 	alias ls="ls -GF"
 	export LSCOLORS=Gxfxcxdxbxegedabagacad
