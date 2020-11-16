@@ -13,3 +13,9 @@ do
 	echo "Loading $file..."
 	. "$file"
 done
+
+ZSHRCLOCAL=$HOME/.zshrc.local
+if [[ -f $ZSHRCLOCAL ]]
+then
+	. $ZSHRCLOCAL
+fi
