@@ -1,0 +1,21 @@
+#!/bin/zsh
+
+. "$HOME"/.shrc
+
+DOTFILES_DIR=$HOME/.dotfiles
+for file in "$DOTFILES_DIR"/*/*.sh
+do
+	echo "Loading $file..."
+	. "$file"
+done
+for file in "$DOTFILES_DIR"/*/*.zsh
+do
+	echo "Loading $file..."
+	. "$file"
+done
+
+ZSHRCLOCAL=$HOME/.zshrc.local
+if [[ -f $ZSHRCLOCAL ]]
+then
+	. $ZSHRCLOCAL
+fi

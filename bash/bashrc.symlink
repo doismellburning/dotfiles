@@ -3,33 +3,9 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-alias ls="LC_COLLATE=C ls --color=auto -F"
-alias ll='ls -l'
-alias la='ls -a'
+. "$HOME"/.shrc
 
-if [[ "$OSTYPE" == "darwin"* ]]
-then
-	alias ls="ls -GF"
-	export LSCOLORS=Gxfxcxdxbxegedabagacad
-fi
-
-alias grep='grep --color --binary-files=without-match'
-alias hilite='grep -C 999999'
-alias urxvt='urxvt -fg white -bg black +sb -fn "xft:Bitstream Vera Sans Mono:autohint=true:size=10pt"'
-alias curlhead='curl -s -D - -o /dev/null'
 alias bashrc=". $HOME/.bashrc"
-alias env='env | sort'
-
-export PATH="$PATH:$HOME/bin"
-export CVS_RSH='ssh'
-
-export EDITOR=vim
-export VISUAL=vim
-export TMPDIR=/tmp
-export BROWSER=/usr/bin/links
-export LESS="FRX" # Kill less if <1 screen, handle escape codes, don't clear screen first
-export AUTOSSH_PORT=0
-
 
 case $TERM in
 	screen*)
@@ -108,10 +84,15 @@ if ! shopt -oq posix; then
 fi
 
 DOTFILES_DIR=$HOME/.dotfiles
-for file in $DOTFILES_DIR/*/*.bash
+for file in "$DOTFILES_DIR"/*/*.sh
 do
 	echo "Loading $file..."
-	. $file
+	. "$file"
+done
+for file in "$DOTFILES_DIR"/*/*.bash
+do
+	echo "Loading $file..."
+	. "$file"
 done
 
 export PATH="$PATH:$DOTFILES_DIR/bin"
