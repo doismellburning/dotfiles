@@ -2,6 +2,10 @@
 truncate_to_repo = false
 truncation_length = 99
 
+[hostname]
+ssh_only = false
+trim_at = ""
+
 [memory_usage]
 disabled = false
 
