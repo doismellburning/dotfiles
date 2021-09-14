@@ -14,6 +14,8 @@ do
 	. "$file"
 done
 
+export PATH="$PATH:$DOTFILES_DIR/bin"
+
 ZSHRCLOCAL=$HOME/.zshrc.local
 if [[ -f $ZSHRCLOCAL ]]
 then
