@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Clean up local git branches that have been merged back
+# (Very hacky)
+
+BASEBRANCH=${1-develop}
+for branch in $(git branch --merged $BASEBRANCH | grep -v "${BASEBRANCH}$")
+do
+	git branch -d $branch
+done
