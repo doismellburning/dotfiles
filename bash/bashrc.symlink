@@ -65,14 +65,6 @@ function gitbc() {
 	done
 }
 
-function va() {
-	# Thanks George!
-	pattern=$1
-	shift
-	vi $(grep -rl "$pattern" $@)
-}
-
-
 umask 0002
 
 if ! shopt -oq posix; then

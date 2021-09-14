@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Thanks George!
+
+pattern=$1
+shift
+
+# shellcheck disable=SC2046,SC2068
+vi $(grep -rl "$pattern" $@)
