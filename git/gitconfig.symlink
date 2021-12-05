@@ -20,6 +20,8 @@
 	excludesfile = ~/.gitignore_global
 [push]
 	default = current
+[pull]
+	ff = only
 [diff]
 	wordregex = [[:alnum:]]+|[^[:space:]]
 [commit]
