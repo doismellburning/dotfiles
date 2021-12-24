@@ -16,6 +16,11 @@ set tabstop=4
 set shiftwidth=4
 set noexpandtab
 
+"Don't add newline at EOF if it's missing.
+"I believe in EOL at EOF but I do not enjoy accidentally introducing unrelated
+"changes into commits.
+set nofixendofline
+
 "Prolog
 autocmd BufRead *.pro set filetype=prolog
 autocmd BufRead *.mysql set filetype=mysql
