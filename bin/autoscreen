@@ -1,0 +1,3 @@
+#!/bin/bash
+
+autossh -x -a -t "$@" "screen -x"
