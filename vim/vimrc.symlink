@@ -49,6 +49,9 @@ set background=dark
 "Pathogen - https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
 
+" I wish this could be `wcn` but oh well
+command Wcn :w | :cn
+
 "Converting C to Go via regex? Hell yeah!
 command! GoProph
 	\ %s/TRUE/true/ge |
