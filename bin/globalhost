@@ -1,0 +1,6 @@
+#!/bin/bash -xe
+
+TO=$1
+FROM=$2
+
+socat TCP-LISTEN:"$TO",fork TCP-CONNECT:'[::]':"$FROM"
