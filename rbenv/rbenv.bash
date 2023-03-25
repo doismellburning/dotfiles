@@ -1,3 +1,3 @@
 #!/bin/bash
 
-eval "$(~/.rbenv/bin/rbenv init - bash)"
+eval "$(rbenv init - bash)"
