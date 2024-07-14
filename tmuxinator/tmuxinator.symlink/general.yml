@@ -2,6 +2,7 @@ name: general
 root: ~/
 
 windows:
-  - htop:
-    - htop
-  - bash:
+  - btop:
+    - btop
+  - pkg:
+    - bash
