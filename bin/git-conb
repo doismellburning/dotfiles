@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -xe
+
+git checkout main || git checkout master
+git pull
+git switch --create "$1"
