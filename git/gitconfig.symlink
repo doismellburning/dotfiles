@@ -31,3 +31,6 @@
 	insteadof = lp:
 [init]
 	defaultBranch = main
+[branch]
+	autoSetupMerge = true
+	autoSetupRebase = always
