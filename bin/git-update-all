@@ -10,6 +10,7 @@ git switch "$BASE"
 
 for BRANCH in $(git branch --list | grep -v '^\*')
 do
+	echo
 	echo "Processing branch $BRANCH"
 	git switch "$BRANCH"
 	#git rebase "$BASE"
