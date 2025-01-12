@@ -3,5 +3,5 @@
 set -xe
 
 git checkout main || git checkout master
-git pull
+git pull --autostash --rebase
 git switch --create "$1"
