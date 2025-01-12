@@ -1,3 +1,6 @@
 #!/bin/zsh
 
-eval "$(rbenv init - zsh)"
+if $(which rbenv)
+then
+	eval "$(rbenv init - zsh)"
+fi
