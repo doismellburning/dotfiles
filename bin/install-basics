@@ -41,3 +41,8 @@ sudo apt install \
 # Extra
 sudo apt install \
 	nmap \
+
+
+# Starship
+# (I hate this install method)
+curl -sS https://starship.rs/install.sh | sh
