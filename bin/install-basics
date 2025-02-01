@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# Crude and basic way of getting tools I want on a new box
+#
+# TODO:
+# - Not just Debian 12
+# - More sophisticated prompting than just the basic apt
+
+# Core
+sudo apt install \
+	btop \
+	curl \
+	git \
+	htop \
+	psmisc \
+	tmux \
+	tree \
+	vim \
+
+# Daily Driver
+sudo apt install \
+	apt-file \
+	keychain \
+	pipx \
+	prometheus-node-exporter \
+
+# Dev
+sudo apt install \
+	build-essential \
+	gh \
+	libbz2-dev \
+	libffi-dev \
+	liblzma-dev \
+	libncurses-dev \
+	libreadline-dev \
+	libsqlite3-dev \
+	libssl-dev \
+	libz-dev \
+	universal-ctags \
+
+# Extra
+sudo apt install \
+	nmap \
