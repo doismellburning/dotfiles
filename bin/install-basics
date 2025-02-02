@@ -36,6 +36,7 @@ sudo apt install \
 	libsqlite3-dev \
 	libssl-dev \
 	libz-dev \
+	shellcheck \
 	universal-ctags \
 
 # Extra
