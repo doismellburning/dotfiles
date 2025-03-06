@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# macOS's pbcopy is great, I don't have it on Ubuntu, I want it.
+# I could figure out how to avoid shadowing problems and looping, or I could just create something with a different name.
+# "clipboard copy" / cbcopy
+# With thanks to https://garywoodfine.com/use-pbcopy-on-ubuntu/
+
+if command -v pbcopy >/dev/null 2>&1
+then
+	# pbcopy exists, use it
+	pbcopy
+elif command -v xclip >/dev/null 2>&1
+then
+	xclip -selection clipboard
+else
+	echo "Neither pbcopy nor xclip found, bailing"
+	exit 1
+fi
