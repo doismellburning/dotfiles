@@ -21,6 +21,7 @@ sudo apt install \
 sudo apt install \
 	apt-file \
 	keychain \
+	net-tools \
 	pipx \
 	prometheus-node-exporter \
 
@@ -41,6 +42,7 @@ sudo apt install \
 
 # Extra
 sudo apt install \
+	molly-guard \
 	nmap \
 
 
