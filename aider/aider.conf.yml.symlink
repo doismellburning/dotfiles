@@ -1,7 +1,7 @@
 # https://aider.chat/docs/config/aider_conf.html
 
 architect: true
-auto-commits: false
+# auto-commits: false  # Originally I didn't like this, but now I know about architect mode and auto-accept-architect:false, let's have Aider generate (and credit!) the commits so it's clear what it's done
 lint-cmd: make fix
 test-cmd: make test
 auto-accept-architect: false  # https://aider.chat/HISTORY.html#aider-v0770 "Added --auto-accept-architect flag (default: true) to automatically accept changes from architect coder format without confirmation." - nope!
