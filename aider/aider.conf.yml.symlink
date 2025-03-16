@@ -4,3 +4,4 @@ architect: true
 auto-commits: false
 lint-cmd: make fix
 test-cmd: make test
+auto-accept-architect: false  # https://aider.chat/HISTORY.html#aider-v0770 "Added --auto-accept-architect flag (default: true) to automatically accept changes from architect coder format without confirmation." - nope!
