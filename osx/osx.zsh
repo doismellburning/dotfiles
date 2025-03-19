@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # With many thanks to https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 
