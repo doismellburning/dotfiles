@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-if $(which rbenv)
+if command -v rbenv >/dev/null 2>&1
 then
 	eval "$(rbenv init - zsh)"
 fi
