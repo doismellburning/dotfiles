@@ -2,6 +2,10 @@
 
 . "$HOME"/.shrc
 
+# Enable emacs keybinds (CTRL+R find, etc.)
+# Though I'm a vim user, I grew up with the emacs bash keybindings...
+bindkey -e
+
 DOTFILES_DIR=$HOME/.dotfiles
 for file in "$DOTFILES_DIR"/*/*.sh
 do
