@@ -1,0 +1,3 @@
+#!/bin/bash
+
+pandoc --wrap preserve --from markdown --to rst $@
