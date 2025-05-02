@@ -4,10 +4,13 @@ set hlsearch
 set noautoindent
 set nocompatible
 set nobackup
-set pastetoggle=<F11>
 set ruler
 syntax on
 filetype plugin on
+
+if !has('nvim')
+	set pastetoggle=<F11>
+endif
 
 set viminfo='20,<1000,s1000 " Bigger paste buffer - https://stackoverflow.com/questions/17812111/default-buffer-size-to-copy-paste-in-vim
 
