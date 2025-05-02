@@ -2,6 +2,6 @@
 
 # TODO Add status output, and replace bootstrap with something less intrusive
 
-cd ~/.dotfiles
+cd ~/.dotfiles || exit 1
 git pull
 ./bin/bootstrap
