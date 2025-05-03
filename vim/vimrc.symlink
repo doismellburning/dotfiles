@@ -50,7 +50,9 @@ nmap <silent> gw "_yiw:s/\(\%#\w\+\)\(\_W\+\)\(\w\+\)/\3\2\1/<CR><C-o>:noh<CR>
 set background=dark
 
 "Pathogen - https://github.com/tpope/vim-pathogen
-execute pathogen#infect()
+if !has('nvim')
+	execute pathogen#infect()
+endif
 
 " I wish this could be `wcn` but oh well
 command Wcn :w | :cn
