@@ -57,6 +57,14 @@ endif
 " I wish this could be `wcn` but oh well
 command Wcn :w | :cn
 
+" https://www.reddit.com/r/neovim/comments/1d66jlw/color_scheme_problems_in_0100/
+" Neovim's new colorscheme may have "different (I'd argue, better) definitions
+" and links of built-in groups" but it also seems super drab, so gimme
+" vim-style
+colorscheme vim
+" Also don't take from my terminal!
+set notgc
+
 "Converting C to Go via regex? Hell yeah!
 command! GoProph
 	\ %s/TRUE/true/ge |
