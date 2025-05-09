@@ -5,6 +5,7 @@ set noautoindent
 set nocompatible
 set nobackup
 set ruler
+set mouse=
 syntax on
 filetype plugin on
 
