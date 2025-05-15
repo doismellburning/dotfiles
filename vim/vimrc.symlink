@@ -62,7 +62,9 @@ command Wcn :w | :cn
 " Neovim's new colorscheme may have "different (I'd argue, better) definitions
 " and links of built-in groups" but it also seems super drab, so gimme
 " vim-style
-colorscheme vim
+if has('nvim')
+	colorscheme vim
+endif
 " Also don't take from my terminal!
 set notgc
 
