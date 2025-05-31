@@ -24,6 +24,7 @@ sudo apt install \
 	net-tools \
 	pipx \
 	prometheus-node-exporter \
+	starship \
 
 # Dev
 sudo apt install \
@@ -44,8 +45,3 @@ sudo apt install \
 sudo apt install \
 	molly-guard \
 	nmap \
-
-
-# Starship
-# (I hate this install method)
-curl -sS https://starship.rs/install.sh | sh
