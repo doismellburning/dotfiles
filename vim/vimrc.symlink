@@ -55,6 +55,8 @@ if !has('nvim')
 	execute pathogen#infect()
 endif
 
+set maxmempattern=5000 " Porting Dire Wolf's ax25_link.c to Go generated an "E363: pattern uses more memory than 'maxmempattern'" issue, so bumping
+
 " I wish this could be `wcn` but oh well
 command Wcn :w | :cn
 
