@@ -34,3 +34,5 @@
 [branch]
 	autoSetupMerge = true
 	autoSetupRebase = always
+[rerere]
+	enabled = true
