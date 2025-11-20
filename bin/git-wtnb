@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -e
+
+if [ -z "$1" ]; then
+    echo "Usage: git wtnb <branch-name>" >&2
+    exit 1
+fi
+
+BRANCH="$1"
+SANITIZED="${BRANCH//\//_}"
+REPO_NAME=$(basename "$(git rev-parse --show-toplevel)")
+TARGET="../${REPO_NAME}-worktree-${SANITIZED}"
+
+git worktree add -b "$BRANCH" "$TARGET" && cd "$TARGET"
