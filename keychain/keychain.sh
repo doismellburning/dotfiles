@@ -6,4 +6,4 @@ then
 	return
 fi
 
-eval $(keychain --eval "${HOME}"/.ssh/id_!(*.pub))
+eval $(keychain --quiet --eval "${HOME}"/.ssh/id_!(*.pub))
