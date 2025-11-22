@@ -23,6 +23,7 @@
 	default = current
 [pull]
 	ff = only
+	rebase = true
 [diff]
 	wordregex = [[:alnum:]]+|[^[:space:]]
 [commit]
@@ -36,3 +37,5 @@
 	autoSetupRebase = always
 [rerere]
 	enabled = true
+[rebase]
+	autoStash = true
