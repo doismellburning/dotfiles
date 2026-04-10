@@ -9,4 +9,3 @@ cabal.sandbox.config
 .idea
 .envdir
 .aider*
-.claude
