@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# gh repo fork set-default
+
+gh repo fork --remote
+gh repo set-default
