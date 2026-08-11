@@ -1,0 +1,6 @@
+" Neovim reads this (~/.config/nvim/init.vim) instead of ~/.vimrc. Point it at
+" the shared vimrc so vim and nvim stay in sync, and add ~/.vim to the
+" runtimepath/packpath so nvim picks up the same plugins and after/ files.
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath = &runtimepath
+source ~/.vimrc
